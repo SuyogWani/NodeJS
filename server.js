@@ -43,6 +43,12 @@ app.get('/about', (req, res) => {
   });
 });
 
+app.get('/portfolio', (req, res) => {
+  res.render('portfolio.hbs', {
+    pageHead: 'Portfolio Page'
+  });
+});
+
 app.get('/bad', (req, res) => {
   res.send({
     errorMessage: "Bad REquest"
