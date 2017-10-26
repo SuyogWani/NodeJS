@@ -22,12 +22,12 @@ app.use((req, res, next) => {
   next();
 });
 
-app.use((req, res, next) => {
-  res.render('maintenance.hbs', {
-    pageHead: 'Maintenance under way!',
-    currentYear: new Date().getFullYear()
-  });
-});
+// app.use((req, res, next) => {
+//   res.render('maintenance.hbs', {
+//     pageHead: 'Maintenance under way!',
+//     currentYear: new Date().getFullYear()
+//   });
+// });
 
 app.get('/', (req, res) => {
   res.render('welcome.hbs', {
